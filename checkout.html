@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-SHIRT WORLD</title>
+  <link rel="stylesheet" href="checkout.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="homepage.html" class="logo">
+        <img src="C:\Users\hp\Documents\T-shirt Project\logo.png" alt="T-SHIRT WORLD Logo"> 
+      </a>
+      <div class="nav-links">
+        <a href="homepage.html">HOME</a>
+        <a href="aboutus2.html">ABOUT US</a>
+        <a href="pcatalog.html">PRODUCT CATALOG</a>
+        <a href="contactus.html">CONTACT US</a>
+      </div>
+      <div class="user-actions">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="C:\Users\hp\Documents\T-shirt Project\User.png" width="25" height="25" alt="User Icon"> 
+          </button>
+          <div class="dropdown-content">
+            <a href="login2.html">Log in</a>
+          </div>
+        </div>
+        <a href="cart.html">
+          <img src="C:\Users\hp\Documents\T-shirt Project\Cart.png" width="25" height="25" alt="Cart"> 
+        </a>
+      </div>
+    </nav>
+</header>
+<body>
+    <h1>Checkout</h1>
+    <form id="checkoutForm">
+        <h2>Shipping Details</h2>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <input type="text" id="address1" placeholder="Address Line 1" required>
+        <input type="text" id="address2" placeholder="Address Line 2">
+        <input type="text" id="city" placeholder="City" required>
+        <input type="text" id="country" value="Egypt" readonly>
+
+        <h2>Payment Options</h2>
+        <label><input type="radio" name="paymentMethod" value="cash" checked>Cash on Delivery</label>
+        <label><input type="radio" name="paymentMethod" value="creditCard">Credit Card</label>
+
+        <div id="creditCardInfo" style="display: none;">
+            <input type="text" id="cardName" placeholder="Name on Card">
+            <input type="text" id="cardNumber" placeholder="Card Number" maxlength="16">
+            <input type="text" id="expiryDate" placeholder="Expiry Date (MM/YY)">
+            <input type="text" id="cvv" placeholder="CVV" maxlength="3">
+        </div>
+
+        <button type="submit" id="submit">Pay and Place Order</button>
+    </form>
+    <script src="checkout.js"></script>
+<div class="footer">
+    <h3>Make Sure to Follow Us On the Following Platforms:</h3>
+    <a href="https://www.facebook.com/" target="_blank"><img src="C:\Users\hp\Documents\T-shirt Project\Facebook.png" alt="facebook" width="25" height="25"></a>
+    <a href="https://www.instagram.com/" target="_blank"><img src="C:\Users\hp\Documents\T-shirt Project\Instagram.png" alt="Instagram" width="25" height="25"></a>
+    <br><br>
+    <a href="#">Size Chart</a>
+    <br>
+    <a href="#">Washing</a>
+    <br>
+    <a href="#">Shipping and Returns</a>
+    <br>
+    <h5>Copyright / 2023-2024 by T-Shirt WORLD / All Rights Reserved</h5>
+  </div>
+  </main>
+  <script src="contactFormValidation.js"></script>
+  <script src="dynamicInquiry.js"></script>
+  </body>
+  </html>

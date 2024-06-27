@@ -1,0 +1,257 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+  }
+  
+  body {
+    padding-top: 70px;  
+  }
+  
+  .header {
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1030;  
+  }
+  
+  .logo img {
+    height: 60px;  
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+    z-index: 1031;  
+  }
+  
+  .user-actions .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .user-actions .dropdown .dropbtn {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-actions .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1032;  
+  }
+  
+  .user-actions .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .user-actions .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .user-actions .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .user-actions .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  .user-actions a img {
+    width: 30px;  
+    height: 30px;  
+    display: block;  
+  }
+  
+
+  @media screen and (max-width: 800px) {
+    .nav-links, .user-actions {
+      flex-direction: column;
+      text-align: center;  
+    }
+    .nav-links a, .user-actions .dropdown .dropbtn {
+      margin: 10px 0;  
+    }
+    .header {
+      flex-direction: column; 
+      align-items: center;  
+    }
+  }
+  
+  .full-width-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 1;  
+}
+
+.image-text {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .image-text {
+    font-size: 1.5em;
+  }
+}
+
+.contact-form-section {
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-form-section {
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-form-container {
+  background-color: #fff;
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.form-group {
+  margin-bottom: 20px; 
+  text-align: left; 
+}
+
+.form-group label {
+  display: block; 
+  margin-bottom: 8px; 
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 97.5%; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-family: 'Cairo', sans-serif; 
+}
+
+.form-group textarea {
+  height: 100px; 
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; 
+}
+
+button[type="submit"]:hover {
+  background-color: #555; 
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 20px; 
+  }
+
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%; 
+  }
+}
+
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+  }
+  
+  .footer h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .footer img {
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+  
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin: 0 0;
+    transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #c0c0c0;
+  }
+  
+  .footer h5 {
+    margin-top: 20px;
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+      padding: 20px;
+    }
+  
+    .footer a {
+      margin: 5px 0;
+    }
+  }

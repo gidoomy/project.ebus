@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="productdetails.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="homepage.html" class="logo">
+        <img src="C:\Users\hp\Documents\T-shirt Project\logo.png" alt="T-SHIRT WORLD Logo"> 
+      </a>
+      <div class="nav-links">
+        <a href="homepage.html">HOME</a>
+        <a href="aboutus2.html">ABOUT US</a>
+        <a href="pcatalog.html">PRODUCT CATALOG</a>
+        <a href="contactus.html">CONTACT US</a>
+      </div>
+      <div class="user-actions">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="C:\Users\hp\Documents\T-shirt Project\User.png" width="25" height="25" alt="User Icon"> 
+          </button>
+          <div class="dropdown-content">
+            <a href="login2.html">Log in</a>
+          </div>
+        </div>
+        <a href="cart.html">
+          <img src="C:\Users\hp\Documents\T-shirt Project\Cart.png" width="25" height="25" alt="Cart"> 
+        </a>
+      </div>
+    </nav>
+  </header>
+    <div class="product-details">
+        <img id="productImage" src="" alt="Product Image">
+        <div class="product-info">
+            <h1 id="productName">Product Name</h1>
+            <p id="productCategory">Category: </p>
+            <p id="productPrice">Price: </p>
+            <label for="sizeSelect">Size:</label>
+            <select id="sizeSelect">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+            <button id="addToCartButton">Add to Cart</button>
+        </div>
+    </div>
+    <script src="productdetails.js"></script>
+    <br><br>

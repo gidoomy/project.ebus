@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - T-SHIRT WORLD</title>
+  <link rel="stylesheet" href="contactus.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="homepage.html" class="logo">
+        <img src="C:\Users\hp\Documents\T-shirt Project\logo.png" alt="T-SHIRT WORLD Logo"> 
+      </a>
+      <div class="nav-links">
+        <a href="homepage.html">HOME</a>
+        <a href="aboutus2.html">ABOUT US</a>
+        <a href="pcatalog.html">PRODUCT CATALOG</a>
+        <a href="contactus.html">CONTACT US</a>
+      </div>
+      <div class="user-actions">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="C:\Users\hp\Documents\T-shirt Project\User.png" width="25" height="25" alt="User Icon"> 
+          </button>
+          <div class="dropdown-content">
+            <a href="login2.html">Log in</a>
+          </div>
+        </div>
+        <a href="cart.html">
+          <img src="C:\Users\hp\Documents\T-shirt Project\Cart.png" width="25" height="25" alt="Cart"> 
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="full-width-image">
+      <img src="C:\Users\hp\Documents\T-shirt Project\contactus.png" height="25" alt="Contact Us">
+    </section>
+    <section class="contact-form-section">
+      <div class="contact-form-container">
+        <h2>Got a Question?</h2>
+        <p>We are more than happy to assist.</p>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="inquiry">Inquiry Type:</label>
+            <select id="inquiry" name="inquiry" required>
+              <option value="price">Price Inquiry</option>
+              <option value="order">Order Inquiry</option>
+              <option value="employment">Employment Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div class="footer">
+    <h3>Make Sure to Follow Us On the Following Platforms:</h3>
+    <a href="https://www.facebook.com/" target="_blank"><img src="C:\Users\hp\Documents\T-shirt Project\Facebook.png" alt="facebook" width="25" height="25"></a>
+    <a href="https://www.instagram.com/" target="_blank"><img src="C:\Users\hp\Documents\T-shirt Project\Instagram.png" alt="Instagram" width="25" height="25"></a>
+    <br><br>
+    <a href="#">Size Chart</a>
+    <br>
+    <a href="#">Washing</a>
+    <br>
+    <a href="#">Shipping and Returns</a>
+    <br>
+    <h5>Copyright / 2023-2024 by T-Shirt WORLD / All Rights Reserved</h5>
+  </div>
+</main>
+<script src="contactFormValidation.js"></script>
+<script src="dynamicInquiry.js"></script>
+</body>
+</html>
